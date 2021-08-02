@@ -1,0 +1,54 @@
+<html>
+<head>
+ <title>register Form</title>
+ <link rel="stylesheet" href="file:///E:/html/wallpaper/register/register.css"> 
+</head>
+
+<body>
+  <div class="form-box">
+  <div class="button-box">
+   <div id="btn"></div>
+<button type="button" class="toggle-btn" onclick="register()">Register</button>
+<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+</div>
+
+<form id="register" class="input-group" >
+<input type="text" class="input-field" placeholder="User Id" name="User Id"> 
+<input type="email" class="input-field" placeholder="Email Id" name="Email Id" >
+<input type="text" class="input-field" placeholder="Enter Password" name="Password">
+<input type="checkbox" class="check-box" name="Check-box"><span>I agree to the terms & Conditions</span>
+<button tupe="Submit" class="submit-btn">Register</button>
+</form>
+
+<form id="login" class="input-group">
+<input type="text" class="input-field" placeholder="User Id" required>
+<input type="text" class="input-field" placeholder="Enter Password" required>
+<input type="checkbox" class="check-box" ><span>Rember Password</span>
+<button tupe="Submit" class="submit-btn">Log In</button>
+</form>
+
+</div>
+
+<script>
+ var x= document.getElementById("register");
+ var y= document.getElementById("login");
+ var z= document.getElementById("btn");
+
+
+function login(){
+ x.style.left= "-400px";
+ y.style.left= "50px";
+ z.style.left= "110px";
+}
+function register(){
+ x.style.left= "50px";
+ y.style.left= "-400px";
+ z.style.left= "0px";
+ }
+
+
+
+</script>
+</body>
+</html>
+ 
